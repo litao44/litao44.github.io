@@ -5,11 +5,11 @@
   
 
   
-  <title>Hexo</title>
+  <title>Tag: 数据库 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/数据库/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
@@ -63,92 +63,36 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-数据库事务隔离级别" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/27/数据库事务隔离级别/" class="article-date">
-  <time datetime="2018-03-27T14:10:19.000Z" itemprop="datePublished">2018-03-27</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2018/03/27/数据库事务隔离级别/" class="archive-article-date">
+  <time datetime="2018-03-27T14:10:19.000Z" itemprop="datePublished">Mar 27</time>
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/数据库事务隔离级别/">数据库事务隔离级别</a>
+      <a class="archive-article-title" href="/2018/03/27/数据库事务隔离级别/">数据库事务隔离级别</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="MySQL-事务隔离级别"><a href="#MySQL-事务隔离级别" class="headerlink" title="MySQL 事务隔离级别"></a>MySQL 事务隔离级别</h2><ul>
-<li><p>未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据</p>
-</li>
-<li><p>提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)</p>
-</li>
-<li><p>可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读</p>
-</li>
-<li><p>串行读(Serializable)：完全串行化的读，每次读都需要获得表级共享锁，读写相互都会阻塞</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/数据库事务隔离级别/" data-id="cjf9qpphv0001abn9fe0ybxgy" class="article-share-link">Compartir</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
 </article>
-
-
   
-    <article id="post-为什么malloc需要指定大小而free不用？" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/27/为什么malloc需要指定大小而free不用？/" class="article-date">
-  <time datetime="2018-03-27T13:53:36.000Z" itemprop="datePublished">2018-03-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/为什么malloc需要指定大小而free不用？/">为什么malloc需要指定大小而free不用？</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="为什么malloc时需要指定size，对应的free时不需要指定size？"><a href="#为什么malloc时需要指定size，对应的free时不需要指定size？" class="headerlink" title="为什么malloc时需要指定size，对应的free时不需要指定size？"></a>为什么malloc时需要指定size，对应的free时不需要指定size？</h2><p>malloc申请内存后会在头部多申请四个字节大小的内存，用来存放该内存块的大小。<br>比如你要malloc分配200个字节大小的内存块，malloc实际从操作系统分配了204个字节的内存块，把内存块大小存储在前4个字节，并返回偏移量+4的指针。在free时，从指针的-4偏移量读4个字节作为内存块的大小，然后释放。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/为什么malloc需要指定大小而free不用？/" data-id="cjf9qpphn0000abn95iu4njim" class="article-share-link">Compartir</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
+    </div></section>
   
 
 
