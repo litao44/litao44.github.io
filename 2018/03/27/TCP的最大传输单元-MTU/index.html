@@ -5,14 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>TCP的最大传输单元(MTU) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="最大传输单元 MTU为1500字节  链路层中的网络对数据帧的一个限制，依然以以太网为例，MTU为1500个字节。一个IP数据报在以太网中 传输，如果它的长度大于该MTU值，就要进行分片传输，使得每片数据报的长度小于MTU。分片传输的IP数据报不一定按序到达，但IP首部中的信息能让这些数据报片按序组装。IP数据报的分片与重组是在网络层进完成的。  但是每次最大只能传输1460字节，为什么？  一个">
+<meta name="keywords" content="TCP&#x2F;IP,网络编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCP的最大传输单元(MTU)">
+<meta property="og:url" content="http://yoursite.com/2018/03/27/TCP的最大传输单元-MTU/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="最大传输单元 MTU为1500字节  链路层中的网络对数据帧的一个限制，依然以以太网为例，MTU为1500个字节。一个IP数据报在以太网中 传输，如果它的长度大于该MTU值，就要进行分片传输，使得每片数据报的长度小于MTU。分片传输的IP数据报不一定按序到达，但IP首部中的信息能让这些数据报片按序组装。IP数据报的分片与重组是在网络层进完成的。  但是每次最大只能传输1460字节，为什么？  一个">
+<meta property="og:updated_time" content="2018-03-27T14:28:29.845Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="TCP的最大传输单元(MTU)">
+<meta name="twitter:description" content="最大传输单元 MTU为1500字节  链路层中的网络对数据帧的一个限制，依然以以太网为例，MTU为1500个字节。一个IP数据报在以太网中 传输，如果它的长度大于该MTU值，就要进行分片传输，使得每片数据报的长度小于MTU。分片传输的IP数据报不一定按序到达，但IP首部中的信息能让这些数据报片按序组装。IP数据报的分片与重组是在网络层进完成的。  但是每次最大只能传输1460字节，为什么？  一个">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -61,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-TCP的最大传输单元-MTU" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-TCP的最大传输单元-MTU" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/27/TCP的最大传输单元-MTU/" class="article-date">
   <time datetime="2018-03-27T14:22:45.000Z" itemprop="datePublished">2018-03-27</time>
@@ -76,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/TCP的最大传输单元-MTU/">TCP的最大传输单元(MTU)</a>
+    <h1 class="article-title" itemprop="name">
+      TCP的最大传输单元(MTU)
     </h1>
   
 
@@ -106,172 +109,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-三次握手与四次断开" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/27/三次握手与四次断开/" class="article-date">
-  <time datetime="2018-03-27T14:17:13.000Z" itemprop="datePublished">2018-03-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/三次握手与四次断开/">三次握手与四次断开</a>
-    </h1>
+    <a href="/2018/03/27/三次握手与四次断开/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">三次握手与四次断开</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h2><h2 id="四次断开"><a href="#四次断开" class="headerlink" title="四次断开"></a>四次断开</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/三次握手与四次断开/" data-id="cjf9rbcsd00012en9n1sg9c46" class="article-share-link">Teilen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TCP-IP/">TCP/IP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络编程/">网络编程</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-线程的几种状态" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/27/线程的几种状态/" class="article-date">
-  <time datetime="2018-03-27T14:16:39.000Z" itemprop="datePublished">2018-03-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/线程的几种状态/">线程的几种状态</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/线程的几种状态/" data-id="cjf9rbcsp00042en9w2cms3ii" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-数据库事务隔离级别" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/27/数据库事务隔离级别/" class="article-date">
-  <time datetime="2018-03-27T14:10:19.000Z" itemprop="datePublished">2018-03-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/数据库事务隔离级别/">数据库事务隔离级别</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="MySQL-事务隔离级别"><a href="#MySQL-事务隔离级别" class="headerlink" title="MySQL 事务隔离级别"></a>MySQL 事务隔离级别</h2><ul>
-<li><p>未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据</p>
-</li>
-<li><p>提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)</p>
-</li>
-<li><p>可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读</p>
-</li>
-<li><p>串行读(Serializable)：完全串行化的读，每次读都需要获得表级共享锁，读写相互都会阻塞</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/数据库事务隔离级别/" data-id="cjf9rbcsr00052en9ofcdbgqc" class="article-share-link">Teilen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-为什么malloc需要指定大小而free不用？" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/27/为什么malloc需要指定大小而free不用？/" class="article-date">
-  <time datetime="2018-03-27T13:53:36.000Z" itemprop="datePublished">2018-03-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/为什么malloc需要指定大小而free不用？/">为什么malloc需要指定大小而free不用？</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="为什么malloc时需要指定size，对应的free时不需要指定size？"><a href="#为什么malloc时需要指定size，对应的free时不需要指定size？" class="headerlink" title="为什么malloc时需要指定size，对应的free时不需要指定size？"></a>为什么malloc时需要指定size，对应的free时不需要指定size？</h2><p>malloc申请内存后会在头部多申请四个字节大小的内存，用来存放该内存块的大小。<br>比如你要malloc分配200个字节大小的内存块，malloc实际从操作系统分配了204个字节的内存块，把内存块大小存储在前4个字节，并返回偏移量+4的指针。在free时，从指针的-4偏移量读4个字节作为内存块的大小，然后释放。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/为什么malloc需要指定大小而free不用？/" data-id="cjf9rbcsm00032en9b98akumk" class="article-share-link">Teilen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
