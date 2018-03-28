@@ -107,7 +107,7 @@
 <meta property="og:site_name" content="李涛的博客">
 <meta property="og:description" content="为什么malloc时需要指定size，对应的free时不需要指定size？malloc申请内存后会在头部多申请四个字节大小的内存，用来存放该内存块的大小。比如你要malloc分配200个字节大小的内存块，malloc实际从操作系统分配了204个字节的内存块，把内存块大小存储在前4个字节，并返回偏移量+4的指针。在free时，从指针的-4偏移量读4个字节作为内存块的大小，然后释放。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-27T15:42:50.145Z">
+<meta property="og:updated_time" content="2018-03-28T05:14:03.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为什么malloc需要指定大小而free不用？">
 <meta name="twitter:description" content="为什么malloc时需要指定size，对应的free时不需要指定size？malloc申请内存后会在头部多申请四个字节大小的内存，用来存放该内存块的大小。比如你要malloc分配200个字节大小的内存块，malloc实际从操作系统分配了204个字节的内存块，把内存块大小存储在前4个字节，并返回偏移量+4的指针。在free时，从指针的-4偏移量读4个字节作为内存块的大小，然后释放。">
